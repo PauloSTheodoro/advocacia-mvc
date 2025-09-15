@@ -28,7 +28,7 @@ public class Cliente {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @NotBlank @Size(max = 150)
+  @NotBlank @Size(max = 120)
   private String nome;
 
   @Size(min = 10, max = 11) // com/sem máscara
@@ -38,16 +38,16 @@ public class Cliente {
   @NotBlank @Size(max = 20)
   private String telefone;
 
-  @NotBlank @Email @Size(max = 150)
+  @NotBlank @Email @Size(max = 120)
   private String email;
 
   @Past
   private LocalDate dataNascimento;
 
-  @Size(max = 255)
+  @Size(max = 230)
   private String endereco;
 
-  @Size(max = 1000)
+  @Size(max = 600)
   private String observacoes;
 
   private LocalDateTime criadoEm;
